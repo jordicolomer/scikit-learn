@@ -197,6 +197,7 @@ def test_kfold_valueerrors():
 
 
 def test_kfold_indices():
+    assert False
     # Check all indices are returned in the test folds
     kf = cval.KFold(300, 3)
     check_cv_coverage(kf, expected_n_iter=3, n_samples=300)
